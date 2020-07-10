@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "log4net.Appender.DingTalkRobotAppender", "log4net.Appender.DingTalkRobotAppender\log4net.Appender.DingTalkRobotAppender.csproj", "{163E0F1B-5E36-4126-A0FE-698DEE15647F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DingTalk.Robot.Message", "DingTalk.Robot.Message\DingTalk.Robot.Message.csproj", "{1CC0072E-395A-4229-98F1-69F86BF06F07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.Appender.DingTalkRobotAppender.Test", "log4net.Appender.DingTalkRobotAppender.Test\log4net.Appender.DingTalkRobotAppender.Test.csproj", "{41C7274D-A519-4817-9154-8812C90C50CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{163E0F1B-5E36-4126-A0FE-698DEE15647F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163E0F1B-5E36-4126-A0FE-698DEE15647F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163E0F1B-5E36-4126-A0FE-698DEE15647F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163E0F1B-5E36-4126-A0FE-698DEE15647F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC0072E-395A-4229-98F1-69F86BF06F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC0072E-395A-4229-98F1-69F86BF06F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC0072E-395A-4229-98F1-69F86BF06F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC0072E-395A-4229-98F1-69F86BF06F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C7274D-A519-4817-9154-8812C90C50CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C7274D-A519-4817-9154-8812C90C50CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C7274D-A519-4817-9154-8812C90C50CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C7274D-A519-4817-9154-8812C90C50CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10F9C1E2-BCCD-4755-8847-768E802B8D9C}
+	EndGlobalSection
+EndGlobal
