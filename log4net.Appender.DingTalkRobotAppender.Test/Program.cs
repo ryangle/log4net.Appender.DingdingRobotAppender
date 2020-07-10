@@ -15,7 +15,7 @@ namespace log4net.Appender.DingTalkRobotAppender.Test
             XmlConfigurator.Configure(repository, logconfig);
             ILog logger = LogManager.GetLogger(repository.Name, "NETCorelog4net");
 
-            logger.Debug("Debug msg " + DateTime.Now.ToShortTimeString());
+            logger.Error("Error msg " + DateTime.Now.ToShortTimeString());
             Console.ReadLine();
         }
     }
