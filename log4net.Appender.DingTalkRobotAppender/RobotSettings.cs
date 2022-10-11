@@ -6,6 +6,6 @@ namespace log4net.Appender
 {
     public class RobotSettings
     {
-        public string WebhookAddr { get; set; }
+        public string? WebhookAddr { get; set; }
     }
 }

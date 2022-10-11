@@ -1,16 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <PackageTags>dingtalk;log4net;appender</PackageTags>
-    <Title>Log4net DingTalkRobot Appender</Title>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.0.5</Version>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.12" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DingTalk.Robot.Message\DingTalk.Robot.Message.csproj" />
-  </ItemGroup>
+	<PropertyGroup>
+		<PackageTags>dingtalk;log4net;appender</PackageTags>
+		<Title>Log4net DingTalkRobot Appender</Title>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>0.0.5</Version>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="log4net" Version="2.0.15" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\DingTalk.Robot.Message\DingTalk.Robot.Message.csproj" />
+	</ItemGroup>
 </Project>

@@ -13,13 +13,13 @@ namespace log4net.Appender
 {
     public class DingTalkRobotAppender : AppenderSkeleton
     {
-        public RobotSettings RobotSettings { get; set; }
-        private JsonSerializerSettings JsonSetting = new JsonSerializerSettings
+        public RobotSettings? RobotSettings { get; set; }
+        private readonly JsonSerializerSettings JsonSetting = new()
         {
             ContractResolver = new CamelCasePropertyNamesContractResolver()
         };
-        private MediaTypeHeaderValue MediaTypeHeader = new MediaTypeHeaderValue("application/json");
-        private HttpClient httpClient = new HttpClient();
+        private readonly MediaTypeHeaderValue MediaTypeHeader = new("application/json");
+        private readonly HttpClient httpClient = new();
         protected override void Append(LoggingEvent loggingEvent)
         {
             var textMsg = new TextMsg();
@@ -39,11 +39,11 @@ namespace log4net.Appender
             content.Headers.ContentType = MediaTypeHeader;
             try
             {
-                httpClient.PostAsync(RobotSettings.WebhookAddr, content);
+                httpClient.PostAsync(RobotSettings?.WebhookAddr, content);
             }
             catch (Exception ex)
             {
-                ErrorHandler.Error($"Post to {RobotSettings.WebhookAddr}", ex);
+                ErrorHandler.Error($"Post to {RobotSettings?.WebhookAddr}", ex);
             }
         }
         protected override void OnClose()
